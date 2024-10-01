@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":semanticCommits",
+    "config:best-practices",
+    "group:monorepos",
+    "group:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^\\action\\.yml$"],
+      "matchStrings": ["BINARYEN_VERSION: (?<currentValue>.+)\\n"],
+      "versioningTemplate": "regex:^version_(?<major>\\d+)$",
+      "packageNameTemplate": "WebAssembly/binaryen",
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "binaryen"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    },
+    {
+      "matchDepNames": "binaryen",
+      "automerge": true
+    }
+  ]
+}
