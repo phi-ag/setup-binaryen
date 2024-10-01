@@ -3,6 +3,6 @@
 ## Usage
 
 ```yaml
-- name: Setup binaryen
+- name: Setup Binaryen
   uses: phi-ag/setup-binaryen@v0
 ```
