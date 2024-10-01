@@ -3,7 +3,7 @@
 [![Release](https://img.shields.io/github/v/release/phi-ag/setup-binaryen?style=for-the-badge)](https://github.com/phi-ag/setup-binaryen/releases)
 [![Check](https://img.shields.io/github/actions/workflow/status/phi-ag/setup-binaryen/check.yml?style=for-the-badge&label=check)](https://github.com/phi-ag/setup-binaryen/actions/workflows/check.yml)
 
-Minimal shell script action to setup Binaryen.
+Minimal shell script action to setup [Binaryen](https://github.com/WebAssembly/binaryen)
 
 ## Usage
 
