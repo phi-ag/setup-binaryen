@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/phi-ag/setup-binaryen/compare/v0.0.4...v0.0.5) (2024-10-01)
+
+
+### Miscellaneous Chores
+
+* better description and branding ([e38e8de](https://github.com/phi-ag/setup-binaryen/commit/e38e8de18ced01e712d364a6275b2c7ca7ede775))
+
 ## [0.0.4](https://github.com/phi-ag/setup-binaryen/compare/v0.0.3...v0.0.4) (2024-10-01)
 
 
