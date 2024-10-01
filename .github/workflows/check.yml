@@ -29,3 +29,28 @@ jobs:
 
       - name: Run wasm-opt
         run: wasm-opt --version
+
+  macos:
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+
+      - name: Setup Binaryen
+        uses: ./
+
+      - name: Run wasm-opt
+        run: wasm-opt --version
+
+  windows:
+    runs-on: windows-2022
+    steps:
+      - name: Checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+
+      - name: Setup Binaryen
+        uses: ./
+
+      - name: Run wasm-opt
+        shell: bash
+        run: wasm-opt --version

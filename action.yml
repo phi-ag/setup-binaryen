@@ -24,8 +24,40 @@ runs:
         TOOL_PATH="${RUNNER_TOOL_CACHE:?}/binaryen/${VERSION:?}/${RUNNER_ARCH:?}"
         TOOL_PATH_COMPLETE="${TOOL_PATH}.complete"
 
-        echo "${TOOL_PATH}" >> $GITHUB_PATH
+        echo "${TOOL_PATH}/bin" >> ${GITHUB_PATH}
         [ -f "${TOOL_PATH_COMPLETE}" ] && exit 0
+
+        if [ "${RUNNER_OS}" = "Linux" ]; then
+          if [ "${RUNNER_ARCH}" = "X64" ]; then
+            TARGET="x86_64-linux"
+          elif [ "${RUNNER_ARCH}" = "ARM64" ]; then
+            TARGET="aarch64-linux"
+          else
+            echo >&2 "Unsupported Linux architecture: ${RUNNER_ARCH}"
+            exit 1
+          fi
+        elif [ "${RUNNER_OS}" = "Windows" ]; then
+          if [ "${RUNNER_ARCH}" = "X64" ]; then
+            TARGET="x86_64-windows"
+          else
+            echo >&2 "Unsupported Windows architecture: ${RUNNER_ARCH}"
+            exit 1
+          fi
+        elif [ "${RUNNER_OS}" = "macOS" ]; then
+          if [ "${RUNNER_ARCH}" = "X64" ]; then
+            TARGET="x86_64-macos"
+          elif [ "${RUNNER_ARCH}" = "ARM64" ]; then
+            TARGET="arm64-macos"
+          else
+            echo >&2 "Unsupported macOS architecture: ${RUNNER_ARCH}"
+            exit 1
+          fi
+        else
+          echo >&2 "Unsupported runner os: ${RUNNER_OS}"
+          exit 1
+        fi
+
+        echo "Target ${TARGET}"
 
         command -v curl >/dev/null 2>&1 || { echo >&2 "curl not installed"; exit 1; }
         command -v tar >/dev/null 2>&1 || { echo >&2 "tar not installed"; exit 1; }
@@ -34,7 +66,7 @@ runs:
 
         curl -L --no-progress-meter --fail-with-body \
           --header "Authorization: Bearer ${{ inputs.token }}" \
-          https://github.com/WebAssembly/binaryen/releases/download/${VERSION}/binaryen-${VERSION}-x86_64-linux.tar.gz \
-        | tar zxv -C "${TOOL_PATH}" --strip-components 2 binaryen-${VERSION}/bin/
+          https://github.com/WebAssembly/binaryen/releases/download/${VERSION}/binaryen-${VERSION}-${TARGET:?}.tar.gz \
+        | tar zxv -C "${TOOL_PATH}" --strip-components 1 binaryen-${VERSION}/bin/ binaryen-${VERSION}/lib/
 
         touch "${TOOL_PATH_COMPLETE}"
