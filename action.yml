@@ -14,7 +14,7 @@ branding:
 runs:
   using: composite
   steps:
-    - name: Setup binaryen
+    - name: Setup Binaryen
       shell: bash
       env:
         BINARYEN_VERSION: version_119
