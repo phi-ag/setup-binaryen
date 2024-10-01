@@ -1,0 +1,37 @@
+name: phi.ag - Setup Binaryen
+description: Sets up Binaryen in your GitHub Actions workflow
+author: phi.ag
+inputs:
+  version:
+    description: Binaryen version
+    required: false
+  token:
+    description: GitHub token used to fetch Binaryen release
+    default: ${{ github.token }}
+runs:
+  using: composite
+  steps:
+    - name: Setup binaryen
+      shell: bash
+      env:
+        BINARYEN_VERSION: version_119
+      run: |
+        VERSION=$([ "${INPUT_VERSION}" ] && echo version_${INPUT_VERSION} || echo ${BINARYEN_VERSION})
+
+        TOOL_PATH="${RUNNER_TOOL_CACHE:?}/binaryen/${VERSION:?}/${RUNNER_ARCH:?}"
+        TOOL_PATH_COMPLETE="${TOOL_PATH}.complete"
+
+        echo "${TOOL_PATH}" >> $GITHUB_PATH
+        [ -f "${TOOL_PATH_COMPLETE}" ] && exit 0
+
+        command -v curl >/dev/null 2>&1 || { echo >&2 "curl not installed"; exit 1; }
+        command -v tar >/dev/null 2>&1 || { echo >&2 "tar not installed"; exit 1; }
+
+        mkdir -p "${TOOL_PATH}"
+
+        curl -L --no-progress-meter --fail-with-body \
+          --header "Authorization: Bearer ${INPUT_TOKEN}" \
+          https://github.com/WebAssembly/binaryen/releases/download/${VERSION}/binaryen-${VERSION}-x86_64-linux.tar.gz \
+        | tar zxv -C "${TOOL_PATH}" --strip-components 2 binaryen-${VERSION}/bin/
+
+        touch "${TOOL_PATH_COMPLETE}"
