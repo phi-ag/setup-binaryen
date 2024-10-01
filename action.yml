@@ -8,6 +8,9 @@ inputs:
   token:
     description: GitHub token used to fetch Binaryen release
     default: ${{ github.token }}
+branding:
+  icon: terminal
+  color: blue
 runs:
   using: composite
   steps:
