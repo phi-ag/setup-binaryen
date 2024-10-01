@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.0](https://github.com/phi-ag/setup-binaryen/compare/v0.0.5...v0.1.0) (2024-10-01)
+
+
+### Features
+
+* add support for windows and macos ([26bf09a](https://github.com/phi-ag/setup-binaryen/commit/26bf09aea974e36e9d735b0830076e8a042f6738))
+
+
+### Continuous Integration
+
+* add check workflow ([6140da9](https://github.com/phi-ag/setup-binaryen/commit/6140da94dd1dac18457cc4a06ced98fd1e48704b))
+* check workflow with custom version ([83f8fc5](https://github.com/phi-ag/setup-binaryen/commit/83f8fc52e6c97bd3b36e92e7d616480a67304e56))
+
 ## [0.0.5](https://github.com/phi-ag/setup-binaryen/compare/v0.0.4...v0.0.5) (2024-10-01)
 
 
