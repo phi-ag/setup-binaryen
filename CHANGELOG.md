@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/phi-ag/setup-binaryen/compare/v1.0.0...v1.0.1) (2024-10-01)
+
+
+### Documentation
+
+* link to binaryen github ([23b9244](https://github.com/phi-ag/setup-binaryen/commit/23b92446e4a4e6c9a4061d8cc85fa00ef54328f3))
+
 ## [1.0.0](https://github.com/phi-ag/setup-binaryen/compare/v0.1.0...v1.0.0) (2024-10-01)
 
 
