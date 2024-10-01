@@ -1,5 +1,7 @@
 # Setup Binaryen
 
+Minimal shell script action to setup Binaryen.
+
 ## Usage
 
 ```yaml

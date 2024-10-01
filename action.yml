@@ -1,5 +1,5 @@
 name: phi.ag - Setup Binaryen
-description: Sets up Binaryen in your GitHub Actions workflow
+description: Minimal shell script action to setup Binaryen
 author: phi.ag
 inputs:
   version:
@@ -9,8 +9,8 @@ inputs:
     description: GitHub token used to fetch Binaryen release
     default: ${{ github.token }}
 branding:
-  icon: terminal
-  color: blue
+  icon: download
+  color: orange
 runs:
   using: composite
   steps:
