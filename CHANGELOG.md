@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.4](https://github.com/phi-ag/setup-binaryen/compare/v0.0.3...v0.0.4) (2024-10-01)
+
+
+### Miscellaneous Chores
+
+* capitalize binaryen in readme ([5a8637e](https://github.com/phi-ag/setup-binaryen/commit/5a8637e29d0c4f078c3bd29ebcdd5139798ed87f))
+
 ## [0.0.3](https://github.com/phi-ag/setup-binaryen/compare/v0.0.2...v0.0.3) (2024-10-01)
 
 
