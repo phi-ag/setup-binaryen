@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  check:
+  ubuntu:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
@@ -12,6 +12,20 @@ jobs:
 
       - name: Setup Binaryen
         uses: ./
+
+      - name: Run wasm-opt
+        run: wasm-opt --version
+
+  ubuntu-with-version:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+
+      - name: Setup Binaryen
+        uses: ./
+        with:
+          version: "118"
 
       - name: Run wasm-opt
         run: wasm-opt --version

@@ -19,7 +19,7 @@ runs:
       env:
         BINARYEN_VERSION: version_119
       run: |
-        VERSION=$([ "${INPUT_VERSION}" ] && echo version_${INPUT_VERSION} || echo ${BINARYEN_VERSION})
+        VERSION=$([ "${{ inputs.version }}" ] && echo version_${{ inputs.version }} || echo ${BINARYEN_VERSION})
 
         TOOL_PATH="${RUNNER_TOOL_CACHE:?}/binaryen/${VERSION:?}/${RUNNER_ARCH:?}"
         TOOL_PATH_COMPLETE="${TOOL_PATH}.complete"
@@ -33,7 +33,7 @@ runs:
         mkdir -p "${TOOL_PATH}"
 
         curl -L --no-progress-meter --fail-with-body \
-          --header "Authorization: Bearer ${INPUT_TOKEN}" \
+          --header "Authorization: Bearer ${{ inputs.token }}" \
           https://github.com/WebAssembly/binaryen/releases/download/${VERSION}/binaryen-${VERSION}-x86_64-linux.tar.gz \
         | tar zxv -C "${TOOL_PATH}" --strip-components 2 binaryen-${VERSION}/bin/
 
