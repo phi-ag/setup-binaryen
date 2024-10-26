@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.2](https://github.com/phi-ag/setup-binaryen/compare/v1.0.1...v1.0.2) (2024-10-26)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout digest to 11bd719 ([f2e89e9](https://github.com/phi-ag/setup-binaryen/commit/f2e89e90d67e50ae7d1f04bcfca4852fde6fbc2d))
+* **deps:** update actions/checkout digest to eef6144 ([a12c677](https://github.com/phi-ag/setup-binaryen/commit/a12c677c26f1a39f347d4857b5c5b4a3868c8e51))
+* **deps:** update dependency binaryen to v120 ([d855551](https://github.com/phi-ag/setup-binaryen/commit/d855551ad32e65c190c93d5972fe2a681259d853))
+
 ## [1.0.1](https://github.com/phi-ag/setup-binaryen/compare/v1.0.0...v1.0.1) (2024-10-01)
 
 
