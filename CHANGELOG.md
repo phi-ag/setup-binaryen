@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/phi-ag/setup-binaryen/compare/v1.0.3...v1.0.4) (2025-02-04)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency binaryen to v122 ([1ed211b](https://github.com/phi-ag/setup-binaryen/commit/1ed211baca7693039dc6f69104e4aac3bbe562ec))
+
 ## [1.0.3](https://github.com/phi-ag/setup-binaryen/compare/v1.0.2...v1.0.3) (2024-12-17)
 
 
