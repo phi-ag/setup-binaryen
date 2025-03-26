@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.5](https://github.com/phi-ag/setup-binaryen/compare/v1.0.4...v1.0.5) (2025-03-26)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency binaryen to v123 ([8acf9f3](https://github.com/phi-ag/setup-binaryen/commit/8acf9f3e895b064f66eeea1748ab947e2dc862b0))
+* **deps:** update googleapis/release-please-action digest to 26ac09b ([ade2d6a](https://github.com/phi-ag/setup-binaryen/commit/ade2d6a266cdb7e7c360a86c85fd52177edb546b))
+* **deps:** update googleapis/release-please-action digest to a02a34c ([abaaebb](https://github.com/phi-ag/setup-binaryen/commit/abaaebbbd64238aecf2102eea3052afb190a153d))
+
 ## [1.0.4](https://github.com/phi-ag/setup-binaryen/compare/v1.0.3...v1.0.4) (2025-02-04)
 
 
