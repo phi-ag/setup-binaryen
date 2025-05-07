@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.6](https://github.com/phi-ag/setup-binaryen/compare/v1.0.5...v1.0.6) (2025-05-07)
+
+
+### Miscellaneous Chores
+
+* **config:** migrate renovate config ([7967ac6](https://github.com/phi-ag/setup-binaryen/commit/7967ac6dbd33ba46dac4cc865172a7998a4acb2b))
+* **deps:** update dependency windows to v2025 ([febe8e9](https://github.com/phi-ag/setup-binaryen/commit/febe8e9d21e5d0d1071f17bcbfdb2de08a45c8f5))
+
 ## [1.0.5](https://github.com/phi-ag/setup-binaryen/compare/v1.0.4...v1.0.5) (2025-03-26)
 
 
