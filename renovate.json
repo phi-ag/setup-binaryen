@@ -9,8 +9,12 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^action\\.yml$"],
-      "matchStrings": ["BINARYEN_VERSION: (?<currentValue>.+)\\n"],
+      "managerFilePatterns": [
+        "/^action\\.yml$/"
+      ],
+      "matchStrings": [
+        "BINARYEN_VERSION: (?<currentValue>.+)\\n"
+      ],
       "versioningTemplate": "regex:^version_(?<major>\\d+)$",
       "packageNameTemplate": "WebAssembly/binaryen",
       "datasourceTemplate": "github-releases",
@@ -19,7 +23,13 @@
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "pinDigest"
+      ],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
     },
