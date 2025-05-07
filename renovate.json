@@ -9,7 +9,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^action\\.yml$"],
+      "managerFilePatterns": ["action.yml"],
       "matchStrings": ["BINARYEN_VERSION: (?<currentValue>.+)\\n"],
       "versioningTemplate": "regex:^version_(?<major>\\d+)$",
       "packageNameTemplate": "WebAssembly/binaryen",
