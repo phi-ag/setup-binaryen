@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.6](https://github.com/phi-ag/setup-binaryen/compare/v1.0.5...v1.0.6) (2025-09-06)
+
+
+### Miscellaneous Chores
+
+* **config:** migrate renovate config ([7967ac6](https://github.com/phi-ag/setup-binaryen/commit/7967ac6dbd33ba46dac4cc865172a7998a4acb2b))
+* **deps:** update actions/checkout action to v5 ([a72f495](https://github.com/phi-ag/setup-binaryen/commit/a72f4954dee1946c083a32423ba954a4950fc675))
+* **deps:** update actions/checkout digest to 08eba0b ([b4b26f3](https://github.com/phi-ag/setup-binaryen/commit/b4b26f3550b336092fc24aa9f1c2f1d35598d432))
+* **deps:** update dependency binaryen to v124 ([dd96457](https://github.com/phi-ag/setup-binaryen/commit/dd9645784fa30841029e97e561fcab75c4869fff))
+* **deps:** update dependency windows to v2025 ([febe8e9](https://github.com/phi-ag/setup-binaryen/commit/febe8e9d21e5d0d1071f17bcbfdb2de08a45c8f5))
+* **deps:** update googleapis/release-please-action digest to c2a5a2b ([dc82016](https://github.com/phi-ag/setup-binaryen/commit/dc820168a70b1715fc37d71c2c389df2f156195e))
+
 ## [1.0.5](https://github.com/phi-ag/setup-binaryen/compare/v1.0.4...v1.0.5) (2025-03-26)
 
 
