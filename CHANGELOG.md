@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/phi-ag/setup-binaryen/compare/v1.0.6...v1.0.7) (2025-10-24)
+
+
+### Miscellaneous Chores
+
+* **deps:** update googleapis/release-please-action digest to 16a9c90 ([69ed285](https://github.com/phi-ag/setup-binaryen/commit/69ed285089b91c050be37f3d6c10d4127c0861a0))
+
 ## [1.0.6](https://github.com/phi-ag/setup-binaryen/compare/v1.0.5...v1.0.6) (2025-09-06)
 
 
