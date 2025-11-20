@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/phi-ag/setup-binaryen/compare/v1.0.7...v1.0.8) (2025-11-20)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v6 ([5379dc7](https://github.com/phi-ag/setup-binaryen/commit/5379dc7da51f3372a3d53e212469dde0a20a05ab))
+
 ## [1.0.7](https://github.com/phi-ag/setup-binaryen/compare/v1.0.6...v1.0.7) (2025-11-20)
 
 
