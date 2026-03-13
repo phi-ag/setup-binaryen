@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.9](https://github.com/phi-ag/setup-binaryen/compare/v1.0.8...v1.0.9) (2026-03-13)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency binaryen to v127 ([c90cb5e](https://github.com/phi-ag/setup-binaryen/commit/c90cb5e65772910309ea0fbe6aa224405bda5ab1))
+* **deps:** update dependency binaryen to v128 ([0e9f542](https://github.com/phi-ag/setup-binaryen/commit/0e9f542a0e6efcdbe09148034ef9583b3c7fe63a))
+
 ## [1.0.8](https://github.com/phi-ag/setup-binaryen/compare/v1.0.7...v1.0.8) (2026-02-14)
 
 
