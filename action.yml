@@ -17,7 +17,7 @@ runs:
     - name: Setup Binaryen
       shell: bash
       env:
-        BINARYEN_VERSION: version_127
+        BINARYEN_VERSION: version_128
       run: |
         VERSION=$([ "${{ inputs.version }}" ] && echo version_${{ inputs.version }} || echo ${BINARYEN_VERSION})
 
