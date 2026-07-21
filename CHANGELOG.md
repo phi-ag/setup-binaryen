@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.11](https://github.com/phi-ag/setup-binaryen/compare/v1.0.10...v1.0.11) (2026-07-21)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout digest to 3d3c42e ([9e9d9f7](https://github.com/phi-ag/setup-binaryen/commit/9e9d9f7e98b2eda536b45e6af47d46a6c2b9ad83))
+
 ## [1.0.10](https://github.com/phi-ag/setup-binaryen/compare/v1.0.9...v1.0.10) (2026-07-16)
 
 
